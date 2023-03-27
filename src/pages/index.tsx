@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function App() {
   return (
     <>
       <Head>
@@ -11,8 +11,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main>
-        <h1 className={inter.className}>Hello world!</h1>
+      <main className="m-6">
+        <h1
+          className={`${inter.className} font-bold text-lg text-gray-900 pb-9`}
+        >
+          List of keywords
+        </h1>
+
+        <p>Implement new features here</p>
       </main>
     </>
   )
