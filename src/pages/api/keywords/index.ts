@@ -1,13 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-
-type CompetitionScore = 'low' | 'medium' | 'high' | 'very high'
-type Keyword = {
-  id: number
-  keyword: string
-  search_volume: number
-  competition: CompetitionScore
-  overall_score: number
-}
+import type { Keyword } from '@/types'
 
 const KEYWORDS: Keyword[] = [
   {
