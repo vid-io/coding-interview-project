@@ -11,10 +11,8 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main className="m-6">
-        <h1
-          className={`${inter.className} font-bold text-lg text-gray-900 pb-9`}
-        >
+      <main className={`${inter.className} m-6`}>
+        <h1 className="font-bold text-lg text-gray-900 pb-9">
           List of keywords
         </h1>
 
